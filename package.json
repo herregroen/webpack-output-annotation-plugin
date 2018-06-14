@@ -16,7 +16,7 @@
     "url": "https://github.com/herregroen/webpack-output-annotation-plugin/issues"
   },
   "homepage": "https://github.com/herregroen/webpack-output-annotation-plugin#readme",
-  "devDependencies": {
+  "dependencies": {
     "glob": "^7.1.2",
     "n-readlines": "^1.0.0"
   }

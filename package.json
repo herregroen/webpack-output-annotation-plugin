@@ -1,5 +1,5 @@
 {
-  "name": "webpack-output-annotation-plugin",
+  "name": "webpack-output-annotations-plugin",
   "version": "0.1.0",
   "description": "Parses output annotations in files to set up entry points for webpack.",
   "main": "index.js",

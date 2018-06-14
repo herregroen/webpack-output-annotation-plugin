@@ -1,6 +1,6 @@
-var LineReader   = require( 'n-readlines' ),
-	glob         = require( 'glob' ),
-	output_regex = /@output ([^\s]+)/;
+var LineReader  = require( 'n-readlines' ),
+	glob        = require( 'glob' ),
+	outputRegex = /@output ([^\s]+)/;
 
 function getFileOutput( file ) {
 	var line, inComment, lineReader = new LineReader( file );
@@ -23,7 +23,7 @@ function getFileOutput( file ) {
 
 		// Single-line comment or line in comment block.
 		if ( line.startsWith( '/*' ) || ( inComment && line.startsWith( '*' ) ) ) {
-			var output = output_regex.exec( line );
+			var output = outputRegex.exec( line );
 
 			if ( output ) {
 				lineReader.close();
